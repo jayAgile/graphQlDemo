@@ -12,6 +12,8 @@
     "ios:pod": "npx pod-install ios",
     "android:stg": "react-native run-android --variant=stgDebug",
     "android:prod": "react-native run-android --variant=prodDebug",
+    "build:android:stg": "cd android && ENVFILE=.env.stg ./gradlew assemblestgRelease",
+    "build:android:prod": "cd android && ENVFILE=.env.prod ./gradlew assembleRelease",
     "ios:stg": "react-native run-ios --scheme 'graphQlDemoStg'",
     "ios:prod": "react-native run-ios --scheme 'graphQlDemo'"
   },

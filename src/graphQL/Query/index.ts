@@ -1,6 +1,6 @@
 import {gql} from '@apollo/client';
 
-//Fetch Query
+//Fetch Query used as a get method in api
 export const SINGLE_USER = gql`
   query GET_USERS {
     getUser {
